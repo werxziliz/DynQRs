@@ -88,10 +88,10 @@
     const AS_URL_BASE = "https://script.google.com/macros/s/AKfycbzfEIATyzvGujSTyZ5YETr2StlNY73wJSQ2h35YuuCWX1UE1JjFJK4sHyL9CX1vwcbV/exec"
 
 var url = document.locationo.href;
-    var k = url.substr(url.lastindexOf("k=")+2);
+    var z = url.substr(url.lastindexOf("z=")+2);
 
-if(k){
-      fetch(AS_URL_BASE+'?k='+k)
+if(z){
+      fetch(AS_URL_BASE+'?z='+z)
       .then(r => r.text())
       .then((r) => {
         console.log(r);
